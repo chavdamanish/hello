@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Django</title>
+</head>
+<body bgcolor="lightblue">
+<h1> Hello {{titles}}</h1>
+<a href="{{link}}">HOME</a>
+<a href="app2/signup">SIGNUP</a>
+<a href="app3/login">Login</a>
+
+<form action="expression" method="POST">
+     {% csrf_token %}
+    1st value<input type="text" name="text1">
+    2nd value<input type="text" name="text2">
+    <input type="submit">
+</form>
+</body>
+</html>
